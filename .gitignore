@@ -1,1 +1,4 @@
 .idea
+src/vocably/vocably.egg-info
+src/vocably/__pycache__
+build

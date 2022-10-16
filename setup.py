@@ -23,7 +23,7 @@ setup(
     version=__version__,
     py_modules=['command', 'core'],
     install_requires=core_requirements,
-    description='Vocaly is a Natural Language Framework written in Python for Language based Tasks.',
+    description='Vocably is a Natural Language Framework written in Python for Language based Tasks.',
     long_description=Path('README.md').read_text(),
     long_description_content_type='text/markdown',
     python_requires='>=3.7,<4',

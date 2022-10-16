@@ -15,6 +15,7 @@ core_requirements = [
     'transformers==4.22.1',
     'rich~=12.6.0',
     'spacy~=3.4.1',
+    'smart-open==5.2.1',
 ]
 
 setup(

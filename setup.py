@@ -14,6 +14,7 @@ core_requirements = [
     'scikit-learn==1.1.2',
     'transformers==4.22.1',
     'rich~=12.6.0',
+    'spacy~=3.4.1',
 ]
 
 setup(

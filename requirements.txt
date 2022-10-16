@@ -10,5 +10,7 @@ scikit-learn==1.1.2
 transformers==4.22.1
 tokenizers==0.12.1
 spacy==3.4.1
-flake8==5.4.0
+flake8==5.0.4
 click==7.1.2
+rich~=12.6.0
+setuptools~=65.5.0

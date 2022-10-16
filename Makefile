@@ -5,6 +5,7 @@ install:
 	python3 setup.py install
 
 config:
+	python3 -m pip install pylint==2.15.4 pytest==7.1.3
 	python3 -m spacy download en_core_web_sm
 	python3 -m "nltk.downloader" all
 
@@ -12,9 +13,6 @@ all:
 	make install
 	make config
 	make list
-
-test:
-	python3 -m pytest -v
 
 delete:
 	python3 setup.py clean --all
@@ -26,8 +24,11 @@ uninstall:
 	pip3 uninstall vocably
 
 format:
-	flake8 --max-line-length=120 --ignore=E305,E402,W503,BLK100
+	flake8 --max-line-length=120 --ignore=BLK100 --exclude=build --format="%(path)s:%(row)d:%(col)d: %(code)s %(text)s" --show-source --statistics
 
+# Language: makefile
+lint:
+	pylint vocably --ignore=C0114,C0115,C0116,C0117,C0118
 
-
-	
+test:
+	python3 pytest test/

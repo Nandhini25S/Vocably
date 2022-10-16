@@ -10,6 +10,7 @@ $ pip install vocably
 $ git clone https://github.com/Nandhini25S/Vocably.git
 $ cd Vocably
 $ conda env create -f environment.yml
+$ export PYTHONPATH=./src
 $ python3 setup.py install
 ```
 
@@ -26,6 +27,7 @@ $ conda activate vocably
 to install and config
 
 ```bash
+$ export PYTHONPATH=./src
 $ make install
 $ make configure
 ```

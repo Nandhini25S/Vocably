@@ -2,4 +2,8 @@
 src/vocably/vocably.egg-info
 src/vocably/__pycache__
 build
+src/nandini_vocably.egg-info
 dist
+src/vocably.egg-info
+src/__init__.py
+.pytest_cache

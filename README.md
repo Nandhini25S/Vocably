@@ -47,6 +47,6 @@ $ conda activate vocably
 to install and config
 
 ```bash
-$ install.bat
-$ config.bat
+$ Scripts/install.bat
+$ Scripts/config.bat
 ```

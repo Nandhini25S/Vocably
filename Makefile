@@ -9,11 +9,6 @@ config:
 	python3 -m spacy download en_core_web_sm
 	python3 -m "nltk.downloader" all
 
-all:
-	make install
-	make config
-	make list
-
 delete:
 	python3 setup.py clean --all
 

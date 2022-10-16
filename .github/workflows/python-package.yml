@@ -25,4 +25,4 @@ jobs:
         make config
     - name: Test with pytest
       run: |
-        pytest test/text_preprocessing.py
+        pytest test/text_preprocessor.py

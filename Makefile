@@ -31,4 +31,4 @@ lint:
 	pylint vocably --ignore=C0114,C0115,C0116,C0117,C0118
 
 test:
-	python3 pytest test/
+	pytest test/

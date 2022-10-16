@@ -23,6 +23,3 @@ jobs:
         export PYTHONPATH=./src
         python setup.py install 
         make config
-    - name: Test with pytest
-      run: |
-        pytest test/text_preprocessor.py

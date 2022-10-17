@@ -1,6 +1,7 @@
 from vocably.Preprocessing.text import Preprocess
+from rich import print as rprint
 
-preprocess = Preprocess(remove_links=True, remove_punctuation=True, remove_stopwords=True,
-                        remove_numbers=False, nltk_tokenize=True)
-text = 'Friendship is not only about caring for each other. Being with them in hard times'
-print(f"{preprocess.tokenize(preprocess.normalise(text))}")
+preprocess = Preprocess(remove_links=False, remove_punctuation=False, remove_stopwords=False, lemmatize=False,
+                        remove_numbers=True, nltk_tokenize=False)
+text = "Hello  this is Pranav 1234 www.google.com !!@@@"
+rprint(f"[bold blue]{preprocess.tokenize(preprocess.normalise(text))}[/bold blue]")

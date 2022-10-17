@@ -30,7 +30,8 @@ class Preprocess:
             text = re.sub(r'[^\w\s]', '', text)
             text = re.sub(r'\s+', ' ', text)
         if self.remove_numbers:
-            text = re.sub(r'[^a-zA-Z]', ' ', text)
+            # text = re.sub(r'[^a-zA-Z]', ' ', text)
+            text = re.sub(r'\d+', '', text)
         return text
 
     def tokenize(self, text):

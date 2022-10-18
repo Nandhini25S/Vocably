@@ -1,4 +1,5 @@
 import re
+from tokenize import String
 from nltk.stem import WordNetLemmatizer
 from nltk.tokenize import word_tokenize
 from nltk.stem import PorterStemmer
@@ -19,7 +20,7 @@ class Preprocess:
         self.remove_numbers = remove_numbers
         self.nltk_tokenize = nltk_tokenize
 
-    def normalise(self, text):
+    def normalise(self, text :str):
         text = text.lower()
         text = text.replace('\n', ' ')
         text = text.replace('\t', ' ')
@@ -34,7 +35,7 @@ class Preprocess:
             text = re.sub(r'\d+', '', text)
         return text
 
-    def tokenize(self, text):
+    def tokenize(self, text:str):
         if self.remove_stopwords:
             text = self.stopwords_remove(text)
         if self.nltk_tokenize:
@@ -49,7 +50,7 @@ class Preprocess:
         stemming = PorterStemmer()
         return [stemming.stem(word) for word in text.split()]
 
-    def stopwords_remove(self, text):
+    def stopwords_remove(self, text:str):
         english = spacy.load('en_core_web_sm')
         stop_words = [i for i in english.Defaults.stop_words]
         white_list = WHITELIST

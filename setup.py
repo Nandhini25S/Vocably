@@ -18,6 +18,7 @@ core_requirements = [
     'smart-open==5.2.1',
 ]
 
+# not to install as egg file
 setup(
     name='vocably',
     version=__version__,
@@ -40,4 +41,10 @@ setup(
             'vocably = vocably.cli.main:main',
         ],
     },
+    classifiers=[
+        "Programming Language :: Python :: 3",
+        "License :: OSI Approved :: MIT License",
+        "Operating System :: OS Independent",
+    ],
+    zip_safe=False,
 )

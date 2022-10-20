@@ -1,0 +1,1 @@
+pylint src/vocably --disable=C0103,R0913 > pylint.txt

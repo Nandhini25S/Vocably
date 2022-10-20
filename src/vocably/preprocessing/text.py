@@ -1,5 +1,6 @@
+"""Author : Nandhini
+Date : 18/10/2022"""
 import re
-from tokenize import String
 from nltk.stem import WordNetLemmatizer
 from nltk.tokenize import word_tokenize
 from nltk.stem import PorterStemmer
@@ -8,6 +9,7 @@ from vocably.constants import WHITELIST
 
 
 class Preprocess:
+    """preprocessing class"""
     def __init__(self, remove_stopwords: bool = False,
                  lemmatize: bool = True,
                  remove_links: bool = True,
@@ -20,7 +22,8 @@ class Preprocess:
         self.remove_numbers = remove_numbers
         self.nltk_tokenize = nltk_tokenize
 
-    def normalise(self, text :str):
+    def normalise(self, text: str) -> str:
+        """Normalises text , removes punctuations"""
         text = text.lower()
         text = text.replace('\n', ' ')
         text = text.replace('\t', ' ')
@@ -35,7 +38,8 @@ class Preprocess:
             text = re.sub(r'\d+', '', text)
         return text
 
-    def tokenize(self, text:str):
+    def tokenize(self, text: str) -> list:
+        """Tokenizes sting """
         if self.remove_stopwords:
             text = self.stopwords_remove(text)
         if self.nltk_tokenize:
@@ -50,8 +54,9 @@ class Preprocess:
         stemming = PorterStemmer()
         return [stemming.stem(word) for word in text.split()]
 
-    def stopwords_remove(self, text:str):
+    def stopwords_remove(self, text: str) -> str:
+        """Remove stopwords 'like' ,'is' 'was' """
         english = spacy.load('en_core_web_sm')
-        stop_words = [i for i in english.Defaults.stop_words]
         white_list = WHITELIST
-        return ' '.join([word for word in text.split() if word not in stop_words or word in white_list])
+        return ' '.join([word for word in text.split() if word not in english.Defaults.stop_words
+                         or word in white_list])

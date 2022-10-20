@@ -23,7 +23,8 @@ format:
 
 # Language: makefile
 lint:
-	pylint vocably --ignore=C0114,C0115,C0116,C0117,C0118
+	pylint src/vocably --disable=R0913
+	pylint src/vocably --disable=R0913 > pylint.txt
 
 test:
-	pytest test/
+	python test

@@ -10,7 +10,7 @@ core_requirements = [
     'torch~=1.12.1',
     'gensim~=4.2.0',
     'nltk~=3.7',
-    'scipy==1.9.1',
+    'scipy==1.7.3',
     'scikit-learn==1.1.2',
     'transformers==4.22.1',
     'rich~=12.6.0',

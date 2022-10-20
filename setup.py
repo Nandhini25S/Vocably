@@ -4,8 +4,8 @@ from pathlib import Path
 from src.vocably import __version__
 
 core_requirements = [
-    'numpy~=1.23.3',
-    'pandas~=1.5.0',
+    'numpy~=1.21.6',
+    'pandas~=1.3.5',
     'click~=7.1.2',
     'torch~=1.12.1',
     'gensim~=4.2.0',
@@ -29,7 +29,7 @@ setup(
     long_description_content_type='text/markdown',
     python_requires='>=3.7,<4',
     author="Nandhini, Sarika",
-    author_email=["nandhinisiva2561@gmail.com", "sarikamohan08@gmail.com"],
+    author_email="nandhinisiva2561@gmail.com",
     url="https://github.com/Nandhini25S/Vocably",
     include_package_data=True,
     os_type=["linux", "Windows", "MacOS", "Unix"],

@@ -1,4 +1,4 @@
-from vocably.Preprocessing.text import Preprocess
+from vocably.preprocessing.text import Preprocess
 from rich import print as rprint
 
 preprocess = Preprocess(remove_links=False, remove_punctuation=False, remove_stopwords=False, lemmatize=False,

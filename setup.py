@@ -4,18 +4,18 @@ from pathlib import Path
 from src.vocably import __version__
 
 core_requirements = [
-    'numpy~=1.21.6',
-    'pandas~=1.3.5',
-    'click~=7.1.2',
+    'numpy<=1.21.6',
+    'pandas<=1.3.5',
+    'click<=7.1.2',
     'torch~=1.12.1',
     'gensim~=4.2.0',
     'nltk~=3.7',
-    'scipy==1.9.1',
-    'scikit-learn==1.1.2',
-    'transformers==4.22.1',
+    'scipy<=1.7.3',
+    'scikit-learn<=1.1.2',
+    'transformers<=4.22.1',
     'rich~=12.6.0',
     'spacy~=3.4.1',
-    'smart-open==5.2.1',
+    'smart-open<=5.2.1',
 ]
 
 # not to install as egg file

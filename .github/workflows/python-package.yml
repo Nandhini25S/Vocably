@@ -23,4 +23,4 @@ jobs:
         export PYTHONPATH=./src
         python setup.py install 
         make config
-        
+        Scripts/pytest.bat

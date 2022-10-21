@@ -23,8 +23,8 @@ format:
 
 # Language: makefile
 lint:
-	pylint src/vocably --disable=R0913
-	pylint src/vocably --disable=R0913 > pylint.txt
+	pylint src/vocably --disable=R0913,C0201
+	pylint src/vocably --disable=R0913,C0201 > pylint.txt
 
 test:
 	python test

@@ -1,1 +1,1 @@
-pytest test/text_preprocessor.py
+pytest test/

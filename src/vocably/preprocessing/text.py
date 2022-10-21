@@ -10,6 +10,7 @@ from vocably.constants import WHITELIST
 
 class Preprocess:
     """preprocessing class"""
+
     def __init__(self, remove_stopwords: bool = False,
                  lemmatize: bool = True,
                  remove_links: bool = True,
@@ -58,5 +59,5 @@ class Preprocess:
         """Remove stopwords 'like' ,'is' 'was' """
         english = spacy.load('en_core_web_sm')
         white_list = WHITELIST
-        return ' '.join([word for word in text.split() if word not in english.Defaults.stop_words
-                         or word in white_list])
+        return ' '.join([word for word in text.split() if word not in
+                         english.Defaults.stop_words or word in white_list])

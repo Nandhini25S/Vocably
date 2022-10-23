@@ -7,3 +7,4 @@ dist
 src/vocably.egg-info
 src/__init__.py
 .pytest_cache
+test/test.txt

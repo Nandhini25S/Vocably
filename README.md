@@ -1,6 +1,6 @@
 <div>
 <a href="https://colab.research.google.com/drive/1q56gWXSik2XCT2pqjSD8kv3fLvfvoI1n?usp=sharing"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a>
- <a href = 'https://pypi.org/project/vocably/'><img src="https://img.shields.io/badge/ruth-PyPi-blue?style=flat&logo=python" alt="ruth" /> </a>
+ <a href = 'https://pypi.org/project/vocably/'><img src="https://img.shields.io/badge/vocably-PyPi-blue?style=flat&logo=python" alt="ruth" /> </a>
 </div>
 
 # Vocably

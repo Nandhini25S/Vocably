@@ -22,6 +22,9 @@ This project and everyone participating in it is governed by the [Code of Conduc
 ### License
 By contributing, you agree that your contributions will be licensed under its [MIT License](https://github.com/Nandhini25S/Vocably/blob/master/LICENSE)
 
+### Version Control
+Please use [Git](https://git-scm.com/) for version control. For the versions available
+, see the [tags on this repository](https://github.com/Nandhini25S/Vocably/releases)
 ### Acknowledgements
 - [Nandhini S](https://github.com/Nandhini25S)
 - [Sanjaypranav](https://twitter.com/sanjaypranav_ai)

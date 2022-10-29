@@ -9,3 +9,7 @@ src/__init__.py
 .pytest_cache
 test_and_deploy/test.txt
 /test_and_deploy/
+src/vocably/cli/__pycache__
+src/vocably/featurizer/__pycache__
+src/vocably/preprocessing/__pycache__/
+test/__pycache__

@@ -12,8 +12,9 @@ def main():
     while True:
         user_input = input(">>> ")
         if user_input == "help":
-            rich.print("help")
-        elif user_input == "exit()":
+            with open("src/vocably/cli/help.txt", encoding="utf-8") as file:
+                rich.print(file.read())
+        elif user_input in ("exit()", "quit()"):
             sys.exit()
         else:
             rich.print("Invalid command")

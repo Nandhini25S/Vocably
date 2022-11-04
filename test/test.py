@@ -8,4 +8,5 @@ def module_fixture():
 
 def test_import():
     import vocably
-    assert vocably.__version__ == "0.0.7"
+    assert vocably.__version__ == "0.0.8"
+

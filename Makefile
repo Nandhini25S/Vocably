@@ -5,7 +5,7 @@ install:
 	python3 setup.py install
 
 config:
-	python3 -m pip install pylint==2.15.4 pytest==7.1.3
+	python3 -m pip install pylint pytest
 	python3 -m spacy download en_core_web_sm
 	python3 -m "nltk.downloader" all
 

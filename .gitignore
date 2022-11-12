@@ -14,3 +14,4 @@ src/vocably/featurizer/__pycache__
 src/vocably/preprocessing/__pycache__/
 test/__pycache__
 test_and_deploy/twine.txt
+.idea/

@@ -1,4 +1,6 @@
+************* Module vocably
+src\vocably\__init__.py:8:0: C0305: Trailing newlines (trailing-newlines)
 
---------------------------------------------------------------------
-Your code has been rated at 10.00/10 (previous run: 10.00/10, +0.00)
+------------------------------------------------------------------
+Your code has been rated at 9.91/10 (previous run: 9.91/10, +0.00)
 

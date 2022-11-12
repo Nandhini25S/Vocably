@@ -10,17 +10,14 @@ from vocably.constants import WHITELIST
 class Preprocessor:
     """preprocessing class"""
 
-    def __init__(self, remove_stopwords: bool = False,
-                 lemmatize: bool = False,
+    def __init__(self, lemmatize: bool = False,
                  remove_links: bool = True,
                  remove_punctuation: bool = True,
-                 remove_numbers: bool = True, nltk_tokenize=False):
-        self.remove_stopwords = remove_stopwords
+                 remove_numbers: bool = True):
         self.lemmatize = lemmatize
         self.remove_links = remove_links
         self.remove_punctuation = remove_punctuation
         self.remove_numbers = remove_numbers
-        self.nltk_tokenize = nltk_tokenize
 
     def normalize(self, text: str) -> str:
         """Normalises text , removes punctuations"""
@@ -38,11 +35,12 @@ class Preprocessor:
             text = re.sub(r'\d+', '', text)
         return text
 
-    def tokenize(self, text: str) -> list:
+    def tokenize(self, text: str, nltk_tokenize: str = False,
+                 remove_stopwords: bool = False) -> list:
         """Tokenizes sting """
-        if self.remove_stopwords:
+        if remove_stopwords:
             text = self.stopwords_remove(text)
-        if self.nltk_tokenize:
+        if nltk_tokenize:
             if self.lemmatize:
                 lemmatizer = WordNetLemmatizer()
                 return [lemmatizer.lemmatize(word, pos='v') for word in word_tokenize(text)]

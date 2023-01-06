@@ -12,8 +12,12 @@ def main():
     while True:
         user_input = input(">>> ")
         if user_input == "help":
-            with open("src/vocably/cli/help.txt", encoding="utf-8") as file:
-                rich.print(file.read())
+            rich.print("""vocably provides you environment for Natural Language Completely focus on
+            text and speech. It is a free and open source framework for Natural Language
+            development, understanding, and generation. It is written in Python and allows
+            for easy integration with other Python libraries. It is licensed under the MIT
+            License. Author: Sanjaypranav, Nandhini Sivakumar and Sarika Mohan (2022) Date: 2022-10-11
+            Press ctrl+c to exit or ctrl+d or exit() or quit()""")
         elif user_input in ("exit()", "quit()"):
             sys.exit()
         else:

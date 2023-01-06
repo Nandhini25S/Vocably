@@ -17,3 +17,5 @@ test_and_deploy/twine.txt
 .idea/
 venv
 oryx-build-commands.txt
+/install_and_test/
+install_and_test

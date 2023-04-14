@@ -1,4 +1,4 @@
-from vocably.Preprocessing.text import Preprocessor
+from vocably.preprocessing.text import Preprocessor
 
 
 def test_preprocess():

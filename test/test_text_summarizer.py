@@ -1,4 +1,4 @@
-from vocably.Preprocessing.summarizer import Summarizer
+from vocably.preprocessing.summarizer import Summarizer
 
 
 def test_summarize():

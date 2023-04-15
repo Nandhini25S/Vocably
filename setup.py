@@ -18,6 +18,7 @@ core_requirements = [
     'smart-open~=5.2.1',
     'sentencepiece~=0.1.98',
     'protobuf~=3.20.0',
+    'happytransformer~=2.4.1',
 ]
 
 # not to install as egg file

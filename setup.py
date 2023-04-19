@@ -19,6 +19,7 @@ core_requirements = [
     'sentencepiece~=0.1.98',
     'protobuf~=3.20.0',
     'happytransformer~=2.4.1',
+    'aiohttp~=3.7.4'
 ]
 
 # not to install as egg file

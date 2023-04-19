@@ -1,6 +1,15 @@
-************* Module vocably
-src\vocably\__init__.py:8:0: C0305: Trailing newlines (trailing-newlines)
+************* Module vocably.spellcheck.checker
+src\vocably\spellcheck\checker.py:12:0: C0301: Line too long (133/100) (line-too-long)
+src\vocably\spellcheck\checker.py:22:0: C0303: Trailing whitespace (trailing-whitespace)
+src\vocably\spellcheck\checker.py:23:0: C0305: Trailing newlines (trailing-newlines)
+src\vocably\spellcheck\checker.py:12:4: C0116: Missing function or method docstring (missing-function-docstring)
+src\vocably\spellcheck\checker.py:12:4: R0913: Too many arguments (6/5) (too-many-arguments)
+src\vocably\spellcheck\checker.py:4:0: R0903: Too few public methods (1/2) (too-few-public-methods)
+************* Module vocably.spellcheck
+src\vocably\spellcheck\__init__.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+src\vocably\spellcheck\__init__.py:2:0: C0115: Missing class docstring (missing-class-docstring)
+src\vocably\spellcheck\__init__.py:2:0: R0903: Too few public methods (0/2) (too-few-public-methods)
 
 ------------------------------------------------------------------
-Your code has been rated at 9.91/10 (previous run: 9.91/10, +0.00)
+Your code has been rated at 9.25/10 (previous run: 9.25/10, +0.00)
 

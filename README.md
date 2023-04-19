@@ -4,6 +4,9 @@
 </div>
 
 # Vocably
+
+<img src="data/images/vocably.png" height =300px></img>
+
 Vocably is a Natural Language Processing (NLP) Framework written with the purpose to increase the flow of our development in daily basis.
 ## Quick Installation
 

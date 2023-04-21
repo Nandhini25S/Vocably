@@ -1,7 +1,9 @@
-from vocably.preprocessing.summarizer import Summarizer
+from vocably.summarizer.summarizer import Summarizer
 
 
 def test_summarize():
-    summarizer = Summarizer('t5-base')
-    text = """Author : Nandhini Date : 18/10/2022   Text summarizer using transformers from transformers import pipeline class Summarizer:     """
-    summarizer.summarize(text, max_length=25, min_length=10, do_sample=False)
+    checker = Summarizer()
+    text = """Hi LeetCoders! We have some exciting news! LeetCode launched a new problem category for JavaScript, please checkout this post to learn about the new problem category: JavaScript problems."""
+    print(checker.summarizer(text))
+    
+test_summarize()

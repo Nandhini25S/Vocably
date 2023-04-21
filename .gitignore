@@ -19,3 +19,8 @@ venv
 oryx-build-commands.txt
 /install_and_test/
 install_and_test
+src/vocably/grammercheck/__pycache__
+src/vocably/paraphraser/__pycache__
+src/vocably/summarizer/__pycache__
+src/vocably/spellcheck/__pycache__
+.gitignore
